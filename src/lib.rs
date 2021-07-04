@@ -1,3 +1,5 @@
+#![cfg(target_os = "linux")]
+
 use nom::bytes::complete::{is_a, tag};
 use nom::character::complete::{hex_digit1, multispace1};
 use nom::combinator::map_res;
